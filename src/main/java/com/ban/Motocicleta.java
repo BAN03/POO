@@ -69,10 +69,10 @@ public class Motocicleta {
 class OrdenarMarca implements Comparator<Motocicleta> {
     @Override
     public int compare(Motocicleta m1, Motocicleta m2) {
-        if (m2.getMarca().compareTo(m1.getMarca()) > 0) {
+        if (m2.getMarca().compareTo(m1.getMarca()) < 0) {
             return 1;
         }
-        if (m2.getMarca().compareTo(m1.getMarca()) < 0) {
+        if (m2.getMarca().compareTo(m1.getMarca()) > 0) {
             return -1;
         }
         return 0;
@@ -82,10 +82,10 @@ class OrdenarMarca implements Comparator<Motocicleta> {
 class OrdenarModelo implements Comparator<Motocicleta> {
     @Override
     public int compare(Motocicleta m1, Motocicleta m2) {
-        if (m2.getModelo().compareTo(m1.getModelo()) > 0) {
+        if (m2.getModelo().compareTo(m1.getModelo()) < 0) {
             return 1;
         }
-        if (m2.getModelo().compareTo(m1.getModelo()) < 0) {
+        if (m2.getModelo().compareTo(m1.getModelo()) > 0) {
             return -1;
         }
         return 0;
@@ -95,10 +95,10 @@ class OrdenarModelo implements Comparator<Motocicleta> {
 class OrdenarCC implements Comparator<Motocicleta> {
     @Override
     public int compare(Motocicleta m1, Motocicleta m2) {
-        if (m2.getCentimetrosCubicos() - m1.getCentimetrosCubicos() > 0) {
+        if (m2.getCentimetrosCubicos() - m1.getCentimetrosCubicos() < 0) {
             return 1;
         }
-        if (m2.getCentimetrosCubicos() - m1.getCentimetrosCubicos() < 0) {
+        if (m2.getCentimetrosCubicos() - m1.getCentimetrosCubicos() > 0) {
             return -1;
         }
         return 0;
@@ -108,10 +108,10 @@ class OrdenarCC implements Comparator<Motocicleta> {
 class OrdenarAnio implements Comparator<Motocicleta> {
     @Override
     public int compare(Motocicleta m1, Motocicleta m2) {
-        if (m2.getAnio() - m1.getAnio() > 0) {
+        if (m2.getAnio() - m1.getAnio() < 0) {
             return 1;
         }
-        if (m2.getAnio() - m1.getAnio() < 0) {
+        if (m2.getAnio() - m1.getAnio() > 0) {
             return -1;
         }
         return 0;
@@ -121,10 +121,10 @@ class OrdenarAnio implements Comparator<Motocicleta> {
 class OrdenarPrecio implements Comparator<Motocicleta> {
     @Override
     public int compare(Motocicleta m1, Motocicleta m2) {
-        if (m2.getPrecio() - m1.getPrecio() > 0) {
+        if (m2.getPrecio() - m1.getPrecio() < 0) {
             return 1;
         }
-        if (m2.getPrecio() - m1.getPrecio() < 0) {
+        if (m2.getPrecio() - m1.getPrecio() > 0) {
             return -1;
         }
         return 0;
