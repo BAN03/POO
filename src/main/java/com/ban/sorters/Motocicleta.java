@@ -1,3 +1,5 @@
+package com.ban.sorters;
+
 import java.util.*;
 
 public class Motocicleta {
@@ -34,8 +36,8 @@ public class Motocicleta {
         this.marca = marcas[rand.nextInt(marcas.length)];
         this.modelo = modelos[rand.nextInt(modelos.length)];
         this.centimetrosCubicos = tamanios[rand.nextInt(tamanios.length)];
-        this.anio = rand.nextInt(1987, 2024);
-        this.precio = rand.nextDouble(20000, 300000);
+        this.anio = rand.nextInt(37) + 1987;
+        this.precio = rand.nextInt(28000000)/100 + 20000;
     }
 
     @Override

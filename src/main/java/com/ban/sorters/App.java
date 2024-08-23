@@ -1,3 +1,5 @@
+package com.ban.sorters;
+
 import java.util.*;
 
 public class App {

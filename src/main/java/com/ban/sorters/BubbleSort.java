@@ -1,3 +1,5 @@
+package com.ban.sorters;
+
 public class BubbleSort {
     Motocicleta[] A;
 
